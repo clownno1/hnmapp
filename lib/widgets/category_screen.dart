@@ -7,6 +7,17 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center();
+    return Center(
+      child: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ),
+        itemBuilder: (context, index) => GridTile(
+          child: Icon(
+            Icons.abc,
+          ),
+        ),
+      ),
+    );
   }
 }

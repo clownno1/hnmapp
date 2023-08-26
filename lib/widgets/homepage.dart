@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hnm_app/widgets/category_screen.dart';
 import 'package:hnm_app/widgets/drawer.dart';
 import 'package:hnm_app/models/category_dummy.dart';
 import 'package:hnm_app/widgets/homepage_screen.dart';
@@ -13,11 +14,23 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String activescreen = 'home';
+
+  void getdata() {
+    setState(() {
+      activescreen = 'aksjdbkjasd';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     Widget screenwidget = HomePageScreen(
       recdata: dummy,
+      asd: getdata,
     );
+    if (activescreen == 'aksjdbkjasd') {
+      screenwidget = CategoryScreen();
+    }
 
     return Scaffold(
       drawer: NavDrawer(
