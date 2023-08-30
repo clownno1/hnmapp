@@ -71,6 +71,39 @@ flutter:
   - assets/images/kids_big.png
   - assets/images/ladies_big.png
   - assets/images/men_big.png
+  - assets/new/b1.jpeg
+  - assets/new/b2.jpeg
+  - assets/new/b3.jpeg
+  - assets/new/b4.jpeg
+  - assets/new/d1.jpeg
+  - assets/new/d2.jpeg
+  - assets/new/d3.jpeg
+  - assets/new/d4.jpeg
+  - assets/new/h1.jpeg
+  - assets/new/h2.jpeg
+  - assets/new/h3.jpeg
+  - assets/new/h4.jpeg
+  - assets/new/k1.jpeg
+  - assets/new/k2.jpeg
+  - assets/new/k3.jpeg
+  - assets/new/k4.jpeg
+  - assets/new/l1.jpeg
+  - assets/new/l2.jpeg
+  - assets/new/l3.jpeg
+  - assets/new/l4.jpeg
+  - assets/new/m1.jpeg
+  - assets/new/m2.jpeg
+  - assets/new/m3.jpeg
+  - assets/new/m4.jpeg
+  - assets/new/s1.jpeg
+  - assets/new/s2.jpeg
+  - assets/new/s3.jpeg
+  - assets/new/s4.jpeg
+  - assets/new/su1.jpeg
+  - assets/new/su2.jpeg
+  - assets/new/su3.jpeg
+  - assets/new/su4.jpeg
+  
      
 
   # An image asset can refer to one or more resolution-specific "variants", see
