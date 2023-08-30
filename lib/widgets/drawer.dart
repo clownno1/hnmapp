@@ -6,22 +6,27 @@ class NavDrawer extends StatelessWidget {
   const NavDrawer({
     super.key,
     required this.category,
+    required this.sumfunc,
   });
 
   final List<CategoryModel> category;
+  final void Function() sumfunc;
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: SafeArea(
         child: ListView(
           children: [
-            const ListTile(
+            ListTile(
               leading: SizedBox(
                 width: 70,
                 height: 70,
-                child: Image(
-                  image: AssetImage(
-                    'assets/images/hnm-logo.png',
+                child: InkWell(
+                  onTap: sumfunc,
+                  child: const Image(
+                    image: AssetImage(
+                      'assets/images/hnm-logo.png',
+                    ),
                   ),
                 ),
               ),

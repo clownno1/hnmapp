@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:hnm_app/models/category_model.dart';
 
 class HomePageScreen extends StatelessWidget {
-  const HomePageScreen({super.key, required this.recdata, required this.asd});
+  const HomePageScreen({
+    super.key,
+    required this.recdata,
+    required this.asd,
+  });
 
   final List<CategoryModel> recdata;
   final void Function() asd;

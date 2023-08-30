@@ -16,9 +16,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   String activescreen = 'home';
 
-  void getdata() {
+  void catscr() {
     setState(() {
-      activescreen = 'aksjdbkjasd';
+      activescreen = 'catscr';
+    });
+  }
+
+  void hmscr() {
+    setState(() {
+      activescreen = 'home';
     });
   }
 
@@ -26,14 +32,21 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Widget screenwidget = HomePageScreen(
       recdata: dummy,
-      asd: getdata,
+      asd: catscr,
     );
-    if (activescreen == 'aksjdbkjasd') {
-      screenwidget = CategoryScreen();
+    if (activescreen == 'catscr') {
+      screenwidget = const CategoryScreen();
+    }
+    if (activescreen == 'home') {
+      screenwidget = HomePageScreen(
+        recdata: dummy,
+        asd: catscr,
+      );
     }
 
     return Scaffold(
       drawer: NavDrawer(
+        sumfunc: hmscr,
         category: dummy,
       ),
       appBar: AppBar(

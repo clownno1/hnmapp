@@ -7,15 +7,31 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-        ),
-        itemBuilder: (context, index) => GridTile(
-          child: Icon(
-            Icons.abc,
-          ),
+    return GridView.builder(
+      shrinkWrap: true,
+      gridDelegate:
+          const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      itemCount: ,
+      itemBuilder: (context, index) => Container(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 150,
+              width: 150,
+              child: Image.asset(
+                ,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Text(
+              ,
+              style: const TextStyle(fontSize: 15),
+            ),
+            Text(
+              ,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            )
+          ],
         ),
       ),
     );
